@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+
+<checkout_onepage_index>
+	<reference name="checkout.onepage">
+		<!-- Extra step added to OnePage Checkout -->
+		<block type="insurance/onepage_insurance" name="checkout.onepage.insurance" as="insurance" after="checkout.onepage.shipping_method" template="checkout/onepage/insurance.phtml"/>
+	</reference>
+</checkout_onepage_index>
+</layout>
