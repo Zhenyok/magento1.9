@@ -17,7 +17,7 @@
                     'code' => $this->getCode(),
                     'value' => $amount,
                     'base_value' => $amount,
-                    'label' => $this->helper('insurance')->__($insuranceLabel),
+                    'label' => Mage::helper('insurance')->__($insuranceLabel),
                 ],
                 'grand_total'
             )

@@ -17,7 +17,7 @@ class Itransition_Insurance_Block_Admin_Total_SalesOrder extends Mage_Adminhtml_
                     'code' => $this->getCode(),
                     'value' => $amount,
                     'base_value' => $amount,
-                    'label' => $this->helper('insurance')->__($insuranceLabel),
+                    'label' => Mage::helper('insurance')->__($insuranceLabel),
                 ],
                 'grand_total'
             )

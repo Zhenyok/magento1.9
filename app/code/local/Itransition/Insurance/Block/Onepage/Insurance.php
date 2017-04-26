@@ -8,7 +8,7 @@ class Itransition_Insurance_Block_Onepage_Insurance extends Mage_Checkout_Block_
         $insuranceLabel = Mage::getStoreConfig('insurance_options/customins/insurance_label');
 
         $this->getCheckout()->setStepData('insurance', array(
-            'label' => $this->helper('insurance')->__($insuranceLabel),
+            'label' => Mage::helper('insurance')->__($insuranceLabel),
             'is_show' => true
         ));
 

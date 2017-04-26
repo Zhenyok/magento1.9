@@ -28,7 +28,7 @@ class Itransition_Insurance_Model_Total_Quote extends Mage_Sales_Model_Quote_Add
 
         $address->addTotal(
             ['code' => $this->getCode(),
-                'title' => $this->helper('insurance')->__($insuranceLabel),
+                'title' => Mage::helper('insurance')->__($insuranceLabel),
                 'value' => $amount]
         );
 
